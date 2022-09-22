@@ -31,7 +31,7 @@ OARSUB_NODES_RESOURCES="network_address"
 OARSUB_FORCE_JOB_KEY="no"
 
 # OAR log level: 3(debug+warnings+errors), 2(warnings+errors), 1(errors)
-LOG_LEVEL="1"
+LOG_LEVEL="3"
 
 # Log categories to display in the log file.
 # Ex: LOG_CATEGORIES="scheduler,main,energy"
@@ -283,7 +283,7 @@ SCHEDULER_AVAILABLE_SUSPENDED_RESOURCE_TYPE="default"
 # Be carefull hierarchy labels must be declare below to be use in resource 
 # request. Labels' order does not matter here. Default value is
 # "resource_id,network_address,cpu,core" 
-#HIERARCHY_LABELS="resource_id,network_address,cpu,core" 
+HIERARCHY_LABELS="resource_id,network_address,cpuset,token" 
 
 # Number of jobs which will be scheduled by scheduling round for each queue where Kamelot is used 
 # ***NOT LIMITED by default***
